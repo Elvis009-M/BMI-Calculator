@@ -1,0 +1,182 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f4a460, #fa8072);
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    font-size: 15pt;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 1rem;
+    flex: 2;
+}
+
+header img {
+    width: 70px ;
+    height: 70px ;
+    border-radius: 50%;
+}
+
+main {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+
+.calculator {
+    background: white;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    max-width: 400px;
+    width: 100%;
+}
+
+.calculator h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-calculate {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-calculate:hover {
+    background-color: #218838;
+}
+
+.btn-reset {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: #c82333;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bmi-value {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.category {
+    font-weight: 600;
+}
+
+
+
+footer {
+    width: 100%;
+    line-height: .9;
+    padding: 1.6rem 0;
+    text-shadow: 5px 4px 8px purple;
+    text-align: center;
+}
+
+footer .pair{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .footerlink {
+    text-decoration: none;
+    color: yellow;
+    border-radius: 10px;
+    padding: .3rem .8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+footer .footerlink:hover {
+    background-color: #f48072;
+}
+
+footer p {
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, .7);
+}
+footer p:hover {
+    color: white;
+}
+
+footer .pair .footerbutton img {
+    width: 40px;
+    height: 40px;
+    border-radius: 25%;
+}
+footer .pair .footerbutton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(0, 200, 250, 0.4);
+}
+
+
+
+
+
+
+
+
+
+/* -------        MEDIA QUERIES FOR DEVICES WITH SMALL WIDTH   --------- */
+@media (max-width: 768px) {
+    .calculator {
+        max-width: 300px;
+    }
+}
