@@ -19,7 +19,7 @@ function calculateBMI() {
 
     resultDiv.innerHTML = `
     <p class="bmi-value">Your BMI: ${bmi}</p>
-    <p class="category">Category:${category}</p>
+    <p class="category">Category: ${category}</p>
     `;
 }
 

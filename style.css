@@ -21,7 +21,7 @@ body::before {
     background-image: url('images/bmi.jpeg');
     background-size: cover ;
     background-position: center ;
-    filter: blur(3px);
+    filter: blur(2px);
     z-index: -1;
 }
 
@@ -52,25 +52,13 @@ main {
     position: relative;
     margin: auto;
     padding: 30px;
-    border: solid 1px white;
+    background : grey;
     border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(255,255,255,0.6);
+    /* box-shadow: 0 2px 6px rgba(255,255,255,0.3); */
     max-width: 400px;
     width: 100%;
 }
-.calculator::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% ;
-    height: 100%; 
-    background : transparent;
-    background-size: cover ;
-    background-position: center ;
-    filter: blur(6px);
-    z-index: -1;
-}
+
 
 .calculator h2 {
     text-align: center;
@@ -133,19 +121,18 @@ button {
 .result {
     margin-top: 20px;
     text-align: center;
-    background: darkblue ;
-    border-radius: 10px ;
 }
 
 .bmi-value {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
+    color: #000;
 }
 
 .category {
     font-weight: 600;
-    padding: 1rem; 
+    padding: .7rem; 
 }
 
 
@@ -209,6 +196,6 @@ footer .pair .footerbutton:hover {
 /* -------        MEDIA QUERIES FOR DEVICES WITH SMALL WIDTH   --------- */
 @media (max-width: 768px) {
     .calculator {
-        max-width: 300px;
+        max-width: 250px;
     }
 }
